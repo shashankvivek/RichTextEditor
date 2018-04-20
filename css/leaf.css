@@ -1,0 +1,118 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+/**
+ *  styling for toolbar and its items
+ *
+ *
+ */
+ img{
+ 	max-height: 300px;
+ 	max-width : 300px;
+ }
+.toolbar {
+	display: block;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+	font-size: 12px;
+	color: #6B7277;
+	background: -webkit-linear-gradient(90deg, #ffffff 0%, #f9f9f9 100%);
+	background: -moz-linear-gradient(90deg, #ffffff 0%, #f9f9f9 100%);
+	background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 0 0;
+}
+
+.toolbar-item {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	border-right: 1px solid #DEDEDE;
+}
+
+/**
+ *  styling for the editor part: source code (original textarea) and resulting div
+ *
+ */
+.editor {
+	display: table;
+	/* Default when height is not set */
+	height: 300px;
+	background: #fff;
+	cursor: text;
+	width: 100%;
+}
+
+.editor-container {
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	border-radius: 0 0 3px 3px;
+	position: relative;
+}
+
+.editable-board {
+	min-height: 100%;
+	padding: 0 8px;
+	display: table-cell;
+	overflow-wrap: break-word;
+	width: 100%;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+}
+
+/**
+ *  styling for toolbar button
+ *
+ *
+ */
+.command-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	opacity: 0.5;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 2px;
+	font-size: 0;
+	cursor: pointer;
+}
+
+.command-button:before {
+	font-size: 12px;
+	font-family: FontAwesome;
+}
+
+.command-button.bold:before {
+	content: '\f032';
+}
+.command-button.italic:before {
+  content: '\f033';
+}
+.command-button.underline:before {
+  content: '\f0cd';
+}
+.command-button.insertImage:before {
+  content: '\f1c5';
+}
+.command-button.insertTable:before {
+  content: '\f0ce';
+}
+
+
+.command-button:hover,
+.command-button.command-button-active {
+  opacity: 1
+}
+
+.command-button-active {
+  background-color: #EEEEEE;
+}
