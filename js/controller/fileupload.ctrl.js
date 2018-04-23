@@ -1,19 +1,19 @@
 (function() {
 	angular.module('leaf').controller('FileUploadController',
-			function($uibModalInstance) {
+			function($uibModalInstance,$window,util) {
+				util.saveCursorPosition($window);
 				var $ctrl = this;
-				$ctrl.local = '';
-				
-				$ctrl.attachUrl = function() {
-					return $uibModalInstance.close('url');
-				}
+				$ctrl.local = '',
+				$ctrl.url  = '';
+
 				$ctrl.attach = function() {
-					return $uibModalInstance.close($ctrl.local);
+					var path = ($ctrl.local !== '')? $ctrl.local : $ctrl.url
+					var imgHtml = '<img src="'+ path +'">';
+					return $uibModalInstance.close(imgHtml);
 				}
 				$ctrl.cancel = function() {
 					return $uibModalInstance.close(false);
 				};
-				
-				
+
 			})
 })()

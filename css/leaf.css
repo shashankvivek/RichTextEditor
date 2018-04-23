@@ -1,14 +1,17 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import
+	url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+	;
 
 /**
  *  styling for toolbar and its items
  *
  *
  */
- img{
- 	max-height: 300px;
- 	max-width : 300px;
- }
+img {
+	max-height: 300px;
+	max-width: 300px;
+}
+
 .toolbar {
 	display: block;
 	margin: 0 !important;
@@ -90,29 +93,37 @@
 	font-size: 12px;
 	font-family: FontAwesome;
 }
-
+/* http://astronautweb.co/snippet/font-awesome/ */
 .command-button.bold:before {
 	content: '\f032';
 }
+
 .command-button.italic:before {
-  content: '\f033';
+	content: '\f033';
 }
+
 .command-button.underline:before {
-  content: '\f0cd';
+	content: '\f0cd';
 }
+
 .command-button.insertImage:before {
-  content: '\f1c5';
+	content: '\f1c5';
 }
+
 .command-button.insertTable:before {
-  content: '\f0ce';
+	content: '\f0ce';
+}
+.command-button.insertUnorderedList:before {
+	content: '\f0ca';
+}
+.command-button.insertOrderedList:before {
+	content: '\f0cb';
 }
 
-
-.command-button:hover,
-.command-button.command-button-active {
-  opacity: 1
+.command-button:hover, .command-button.command-button-active {
+	opacity: 1
 }
 
 .command-button-active {
-  background-color: #EEEEEE;
+	background-color: #EEEEEE;
 }
