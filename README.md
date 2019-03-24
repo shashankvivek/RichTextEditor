@@ -12,3 +12,5 @@ This `angularJS` based Editor is based on `component` based design and can resue
 # RichTextEditor with Track changes
 
 This editor can maintain your old texts and add new texts/images/tables with different color so that the new changes can be tracked
+
+** THIS IS WORK IN PROGRESS**
